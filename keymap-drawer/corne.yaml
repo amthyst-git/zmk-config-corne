@@ -258,3 +258,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+draw_config:  
+  dark_mode: true
