@@ -1,0 +1,25 @@
+name: Draw Keymap
+on:
+  workflow_dispatch: # Allows manual triggering
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.yaml"
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Draw keymap
+        uses: caksoylar/keymap-drawer@main
+        with:
+          keymap_lines: true
+          # Change "corne" if your keymap file has a different name
+          keymap_path: "config/corne.keymap" 
+          output_folder: "img"
+          commit_message: "Update keymap SVG [spy]"
