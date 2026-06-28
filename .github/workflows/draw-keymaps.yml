@@ -16,5 +16,5 @@ jobs:
       keymap_patterns: "config/*.keymap"        # path to the keymaps to parse  
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists  
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
-      parse_args: "corne:'-l Base Sym Nav Media Fun'"  
+      parse_args: "corne:'-l zero one two three four five'"  
       draw_args: "corne:'-k corne_rotated'"
